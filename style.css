@@ -65,4 +65,17 @@ main {
 
 main img {
     width: 100%;
+    color: rgb(134, 74, 74);
+    text-align: center;
+    line-height: calc(150vh /3);
 }
+
+.lazy {
+    background: #f1d9f6;
+    width: 100%;
+    height: calc(150vh /3);
+    display: block;
+    margin: 10px auto;
+    border: 0;
+}
+
