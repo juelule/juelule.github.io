@@ -66,16 +66,15 @@ main {
 main img {
     width: 100%;
     color: rgb(134, 74, 74);
-    text-align: center;
-    line-height: calc(150vh /3);
 }
 
 .lazy {
-    background: #f1d9f6;
-    width: 100%;
-    height: calc(150vh /3);
-    display: block;
+    width: auto;
+    /* TODO: this will need to be changed for different viewports, obviously */
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(to bottom right,rgb(208, 200, 200), #f1d9f6);   
     margin: 10px auto;
-    border: 0;
+    display: block;
 }
-
