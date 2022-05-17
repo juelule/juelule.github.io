@@ -66,3 +66,14 @@ main {
 main img {
     width: 100%;
 }
+
+.experiment-container {
+    display: flex;
+
+}
+.experiment-post {
+    width: 33%;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto 10px;
+}
