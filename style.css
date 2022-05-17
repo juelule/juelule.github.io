@@ -65,16 +65,4 @@ main {
 
 main img {
     width: 100%;
-    color: rgb(134, 74, 74);
-}
-
-.lazy {
-    width: auto;
-    /* TODO: this will need to be changed for different viewports, obviously */
-    height: 100vh;
-    line-height: 100vh;
-    text-align: center;
-    background-image: linear-gradient(to bottom right,rgb(208, 200, 200), #f1d9f6);   
-    margin: 10px auto;
-    display: block;
 }
