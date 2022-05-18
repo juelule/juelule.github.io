@@ -5,3 +5,9 @@ Home Page:
 
 Experiments Page:
 - [ ] edit experiments page layout
+- [ ] add tags to posts
+
+Misc.:
+- [ ] design footer
+  - [ ] "lovingly handcoded by"
+- [ ] add changelog

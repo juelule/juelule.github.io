@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     display:flex;
+    font-weight: 300;
 }
 
 @font-face {
@@ -34,6 +35,8 @@ body {
     list-style: none;
     padding: 12px 0 0 0;
     margin: 0px;
+    /* font-weight: 200; */
+
 }
 
 .nav-links li {
@@ -67,18 +70,38 @@ main img {
     width: 100%;
 }
 
+.experiment-container a { 
+    text-decoration: none;
+    color: black;
+}
 .experiment-container {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 70%;
+    margin: 0 auto;
 }
-.experiment-post {
-    width: 33%;
+
+.experiment {
+    border: 1px solid magenta;
+    border-radius: 5%;
     height: 300px;
-    border: 1px solid black;
-    margin: auto 10px;
-    padding: 10px;
+    padding: 2rem 1.75rem;
 }
 
-.experiment-post:hover {
+.experiment:hover {
     transform: scale(1.02);
+} 
+
+.experiment-title {
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.experiment-post-title {
+    font-weight: 300;
+    letter-spacing: 2px;
 }
