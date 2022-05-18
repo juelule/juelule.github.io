@@ -6,23 +6,87 @@ body {
 
 @font-face {
     font-family: 'PicNic';
-    src: url("./fonts/otf/PicNic-Regular.otf") format("opentype");
+    src: url("./fonts/PicNic-Regular.otf") format("opentype");
 }
+
+@font-face {
+    font-family: 'Mourier';
+    src: url("./fonts/Mourier-Regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Saintjean';
+    src: url("./fonts/Saintjean-Regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Mainz';
+    src: url("./fonts/Mainz.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Mixo';
+    src: url("./fonts/VTF_Mixo.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Trickster';
+    src: url("./fonts/Trickster-Reg.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Mess';
+    src: url("./fonts/Mess.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Pilowlava';
+    src: url("./fonts/Pilowlava-Regular.otf") format("opentype");
+  }
+
+  @keyframes title {
+    0% {
+      font-family: 'PicNic', sans-serif;
+      color: magenta;
+    } 15% {
+      font-family: 'Mess', sans-serif;
+      color: green;
+    } 30% {
+      font-family: 'Saintjean', sans-serif;
+      color: yellow;
+    } 45% {
+      font-family: 'Mixo', sans-serif;
+      color: red;
+    } 60% {
+      font-family: 'Mainz', sans-serif;
+      color: blue;
+    } 75% {
+      font-family: 'Pilowlava', sans-serif;
+      color: turquoise;
+    } 90% {
+      font-family: 'Mourier', sans-serif;
+      color: orange;
+    }
+  }
+  
 
 .title {
     font-family: 'PicNic';
     font-size: 45px;
     padding-top: 15px;
-    margin: 0px;
-}
-
-.title:hover {
-    font-size: 50px;
+    margin: 10px 0;
 }
 
 .title a {
     text-decoration: none;
     color: magenta;
+}
+
+.title a:hover {
+    animation-name: title;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    line-height: 67px;
 }
 
 .sub-title {
@@ -105,3 +169,4 @@ main img {
     font-weight: 300;
     letter-spacing: 2px;
 }
+

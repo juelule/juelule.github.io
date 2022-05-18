@@ -1,10 +1,9 @@
 Home Page:
-- [ ] change home headline animation
-  - [ ] find different fonts and colors
-  - [ ] draw animation out
+- [x] change home headline animation
+  - [x] find different fonts and colors
 
 Experiments Page:
-- [ ] edit experiments page layout
+- [x] edit experiments page layout
 - [ ] add tags to posts
 
 Misc.:
