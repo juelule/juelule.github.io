@@ -1,0 +1,73 @@
+.code-flower {
+    color: rgb(96, 143, 27);
+    list-style: none;
+    /* font-size: 35px; */
+
+    transform-origin: 0 0;
+    /* animation: flower 1000ms; */
+}
+
+.petal {
+
+    transform-origin: 100px 200px 800px;
+    /* border: 1px solid red; */
+    /* transform-origin: left 60px; */
+}
+
+.first-petal {
+    transform: rotate(90deg)
+}
+.second-petal {
+    /* transform-origin: 0 0; */
+    transform:rotate(130deg);
+    transform-origin: 220px 200px;
+}
+.third-petal {
+    /* transform-origin: 0 0; */
+    transform:rotate(180deg);
+    transform-origin: 320px 200px;
+}
+.fourth-petal {
+    /* transform-origin: 0 0; */
+    transform:rotate(220deg);
+    transform-origin: 400px 200px;
+}
+
+.fifth-petal {
+    /* transform-origin: 0 0; */
+    transform:rotate(270deg);
+    transform-origin: 480px 200px;
+}
+
+.sixth-petal {
+    /* transform-origin: 0 0; */
+    transform:rotate(310deg);
+    transform-origin: 645px 200px;
+}
+
+.seventh-petal {
+    /* transform-origin: 0 0; */
+    /* border: 1px solid blue; */
+
+    transform:rotate(365deg);
+    /* -webkit-transform: rotate(360deg); */
+
+    transform-origin: -3350px 50px;
+}
+
+.eighth-petal {
+    /* transform-origin: 0 0; */
+    /* border: 1px solid blue; */
+
+    transform:rotate(400deg);
+    transform-origin: -50px 100px;
+}
+
+/* @keyframes flower {
+     {transform: translateX(200px);}
+}    */
+
+.petal:hover {
+    transform: rotate(100deg);
+
+}
