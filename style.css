@@ -4,6 +4,28 @@ body {
     font-weight: 300;
 }
 
+.logo {
+  width: 0px;
+  height: 0px;
+  padding: 55px 70px 0 100px;
+  background: url('./photos/logo.png');
+  background-size: 175px;
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+  /* max-width: 200px;
+  height: 200px;
+} */
+}
+
+.logo:hover {
+  width: 0px;
+  height: 0px;
+  padding: 55px 70px 0 100px;
+  background: url('./photos/logo.gif');
+  background-size: 175px;
+  background-repeat: no-repeat;
+}
+
 @font-face {
     font-family: 'PicNic';
     src: url("./fonts/PicNic-Regular.otf") format("opentype");
