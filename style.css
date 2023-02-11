@@ -1,7 +1,12 @@
 body {
+  margin: 0;
+}
+.body {
     font-family: 'Lato', sans-serif;
     display:flex;
     font-weight: 300;
+    width: 100vw;
+    margin: 0;
 }
 
 @font-face {
@@ -170,3 +175,20 @@ main img {
     letter-spacing: 2px;
 }
 
+.footer {
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background-color: #e9ecef;
+  height: 70px;
+  width: 100%;
+  display: block;
+  padding-top: 5px;
+}
+
+.footer-text {
+  font-family: 'Lato', sans-serif;
+  width: 200px;
+  margin: 15px auto;
+}
