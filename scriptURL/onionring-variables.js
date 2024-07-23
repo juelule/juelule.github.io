@@ -10,7 +10,8 @@ var sites = [
  'https://fantagraphics.com/',
  'https://drawnandquarterly.com/',
  'https://lastgasp.com/',
-  'http://127.0.0.1:5501/'
+  'http://127.0.0.1:5501/',
+  'https://juelule.neocities.org/'
 ];
 
 //the name of the ring
