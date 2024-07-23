@@ -1,0 +1,259 @@
+/* ARELY THOUGHTS switch certain classes to id's */
+/* also create variables first */
+@font-face {
+    font-family: 'picNic';
+    src: url('fonts/otf/PicNic-Regular.otf');
+}
+@font-face {
+    font-family: 'Gensco';
+    src: url('fonts/otf/GENSCO.otf');
+}
+
+h1, h1 a {
+    text-align: center;
+    color: magenta;
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-family: 'picNic';
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    animation: shake 1.5s infinite;
+}
+
+h1:hover {
+    animation: shake 3.5s infinite;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav ul a {
+    font-weight: 900;
+    font-size: 40px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: rgb(0, 255, 76);
+    text-decoration: none;
+}
+    
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+/* HOME PAGE */
+.polaroid {
+    position: absolute;
+    width: 320px;
+    height: 360px;
+    display: grid;
+    grid-template-rows: 1fr 82px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    overflow: clip;
+    min-width: 160px;
+    min-height: 160px;
+    cursor: move;
+  }
+  
+  .polaroid .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gensco", cursive;
+    background-color: #ffffff;
+    color: #36454F;
+  }
+  
+  .polaroid h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .polaroid .content {
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .polaroid .content img {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    height: 90%;
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+/* ABOUT PAGE */
+.about-img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    border: 20px solid white;
+    display: block;
+    width: 40vw;
+    margin: 25px auto;
+}
+
+.about {
+  width: 50vw;
+  margin: 40px auto;
+  font-family: 'Genasco', monospace;
+}
+
+
+/* animations */
+@keyframes shake {
+    0%, 
+    5%{ 
+        transform: rotateY(0); 
+    } 
+    15%{
+        transform: rotateY(15deg);
+    }
+    20% {
+        transform: rotateZ(10deg); 
+        transform: rotateX(15deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+        transform: rotateX(-15deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg)
+    }
+    40%,
+    100% {
+        transform: rotateZ(0)
+    }
+}
+
+.zines {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Genesco', monospace;
+}
+    
+.zines div {
+    /* overflow-y: scroll; */
+    margin: 20px;
+    width: 50%;
+}
+
+
+#zine-scroll-container {
+    /* height: 500px; */
+    /* overflow-y: scroll; */
+    /* border: 1px solid #39FF14; */
+    margin: 15px;
+    padding: 0 0 0 60px;
+    overflow: clip;
+    background-color: green;
+    border-radius: 8px;
+    height: 90vh;
+    overflow-y: scroll;
+
+}
+    
+    
+#zine-scroll {
+    -moz-animation: marquee 25s linear infinite;
+    -webkit-animation: marquee 25s linear infinite;
+    animation: marquee 25s linear infinite;
+    /* margin: 0 auto; */
+    /* overflow-y: scroll; */
+    height: 100%;
+
+}
+
+#zine-scroll:hover,
+#zine-scroll:focus {
+    animation-play-state: paused;
+}
+
+.zines img {
+    width: 75%;
+}
+
+#zine-scroll img{
+    /* overflow-y: scroll; */
+    width: 85%;
+    margin: 15px auto;
+}
+
+
+@keyframes marquee {
+    from {
+        /* -moz-transform: translateY(60vh);
+        -webkit-transform: translateY(60vh); */
+        transform: translateY(10%);
+    }
+    to {
+        /* -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%); */
+        transform: translateY(-110%);
+    }
+}
+
+.garden-container {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 15px;
+    color: white;
+    font-family:'Gensco', cursive;
+    font-size: 1.2rem;
+    }
+    
+.garden-container div {
+    /* background-image: url('images/blackthorn.jpeg'); */
+    /* background-image: url('images/gl-apatite.jpeg'); */
+    background-size: cover;
+    border-radius: 8px;
+    border: 1px solid green;
+    height: 500px;
+    padding: 15px;
+    }
+    
+.garden-music {
+    /* background-image: url('images/gl-apatite.jpeg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('images/gl-apatite.jpeg');
+}
+
+.garden-books {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+     url('images/gl-apatite.jpeg');
+    background-position: center;
+    }
+    
+.garden-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('images/blackthorn.jpeg');
+    background-position: center;
+    /* transform: rotate(30deg) */
+    
+}
+
+.guestbook {
+    font-family: 'Gensco', cursive;
+    font-size: 20px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.guestbook a {
+    color: turquoise;
+}

@@ -1,0 +1,72 @@
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium (蒜) house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+/* this file affects the style of the widget. remember to replace all instances of #my-ring with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
+
+
+
+#my-ring {
+  margin-left: 250px;
+  width: 270px;
+  height: 130px;
+  border: 1px solid black; /* creates some space around the widget */
+  border-radius: 8px;
+  background-color: rgb(241, 241, 85);
+  font-size: small;
+}
+
+#my-ring img {
+  height: 80px;
+  width: 80px;
+}
+
+#my-ring p {
+  margin: 0;
+}
+
+#my-ring .webring-prev {
+  text-align:right;
+}
+
+#my-ring .webring-info {
+   text-align:center;
+   margin-top: 10px;
+}
+
+#my-ring .webring-next {
+  text-align:left;
+}
+
+#my-ring .webring-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#my-ring .webring-duo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#my-ring .webring-text {
+  width: 65%;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@keyframes float {
+  0% { 
+    transform: translate(0,  0px); 
+  }
+  50%  { 
+  transform: translate(0, 15px); 
+  }
+  100%   { 
+    transform: translate(0, -0px); 
+  }  
+}
