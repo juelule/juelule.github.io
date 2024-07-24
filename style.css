@@ -252,9 +252,9 @@ nav ul li:hover {
 
 /* media queries */
 @media screen and (max-width: 480px) {
-    body {
+    /* body {
       background-color: lightgreen;
-    }
+    } */
     h1 {
         margin: 0;
     }
@@ -263,9 +263,9 @@ nav ul li:hover {
         margin-left:-27px;
         
         }
-        nav ul a {
-            display: block;
-            margin-left: 20px;
+    nav ul a {
+        display: block;
+        margin-left: 20px;
         font-size: 20px;
     }
     .polaroid {
@@ -275,8 +275,8 @@ nav ul li:hover {
         flex-direction: column;
     }
     .zines div {
-        width: 90%;
-        margin: 0 20px;
+        width: 80vw;
+        margin: 0;
     }
     .zines img {
         width: 95%;
@@ -290,7 +290,6 @@ nav ul li:hover {
     .garden-container {
         display: flex;
         flex-direction: column;
-        
     }
     .about-img {
         width: 80vw;
