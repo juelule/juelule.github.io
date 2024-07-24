@@ -60,7 +60,7 @@ else {
     <p class='webring-info'>with a little help from my friends...</p>
 
     <div class="webring-duo">
-      <img src="./scriptURL/beetles.PNG"/>
+      <img src="https://juelule.github.io/scriptURL/beetles.PNG"/>
       <p class='webring-text'>This site is part of the ${ringName}!!!</p>
     </div>
     

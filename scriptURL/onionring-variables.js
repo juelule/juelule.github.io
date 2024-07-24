@@ -11,6 +11,7 @@ var sites = [
  'https://drawnandquarterly.com/',
  'https://lastgasp.com/',
   'http://127.0.0.1:5501/',
+  'https://juelule.github.io',
   'https://juelule.neocities.org/'
 ];
 
